@@ -181,7 +181,7 @@ function fire() {
     if(lv >= 100) run.b.forEach(b => { if(b.c !== '#f0f') b.c = `hsl(${frame%360}, 100%, 50%)` });
     if(lv >= 150 && frame % 5 === 0) {
         for(let i=0; i<12; i++) {
-            let a = (i / 12) * Math.PI * 2 + (frame * 1);
+            let a = (i/12)*Math.PI*2 + (frame * 0.05);
             run.b.push({x: p.x, y: p.y, vx: Math.cos(a)*12, vy: Math.sin(a)*12, w: 8, c: '#fff', pen: true});
         }
     }
